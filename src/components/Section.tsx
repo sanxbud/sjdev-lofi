@@ -1,6 +1,6 @@
-import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
+import ReactMarkdown from 'react-markdown'
 
 type SectionProps = {
     header:string
@@ -19,10 +19,15 @@ export const Section = ({header,body}:SectionProps) => {
 
 
     return(
-        <>
-            <p className="section-prompt">sanjaybudhia@dev %</p><p className="section-head" ><Typewriter words={ [header] } typeSpeed={30}/></p>
-            {timer && <p className="section-body" ><Typewriter words={[ body ]} typeSpeed={25}/></p>}
-        </>
+        <div className="space-y-2">
+            
+                <div className="section-line flex gap-2">
+                  <span className="section-prompt text-green-400">sanjaybudhia@dev %</span>
+                  <span className="section-head"><Typewriter words={[header]} typeSpeed={30} /></span>
+                </div>
+                {timer && <p className="section-body"><ReactMarkdown>{body}</ReactMarkdown></p>}
+            
+        </div>
     )
 }
 
