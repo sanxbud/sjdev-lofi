@@ -4,7 +4,7 @@ import { Section } from "../components/Section";
 
 export const Thoughts = () =>{
 
-    const thoughtsHeader = `cat thoughts | more`
+    const thoughtsHeader = `thoughts.log --tail`
     const thoughtsBody = `check out my writing on tech, people, and how the two interact [here](https://sanjaybudhia.dev/thoughts)`
 
 
