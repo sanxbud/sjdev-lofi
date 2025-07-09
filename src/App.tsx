@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import lilguy from './assets/ugotthislilguy.png'
 import { Welcome, Thoughts, Interests, Toolbelt, Experience, Projects, Contact, Whois } from './sections'
 
 function App() {
@@ -25,10 +26,11 @@ function App() {
     <Contact key="contact" />,
   ]
 
-  return (
-    <div className="w-screen  max-w-6xl mx-auto px-10 py-14 text-left items-start text-lg space-y-10 font-mono whitespace-pre-wrap">
+  return (<>
+        <img src={lilguy} alt="you got this" className="mx-auto w-40"/>
+    <div className="w-screen  max-w-6xl mx-auto px-10 py-14 pt-px text-left items-start text-lg space-y-10 font-mono whitespace-pre-wrap">
       {sections.slice(0, visibleIndex + 1)}
-    </div>
+    </div></>
   )
 }
 
