@@ -17,7 +17,7 @@ function App() {
   const sections = [
     <Welcome key="welcome" />,
     <Whois key="whois" />,
-    <Thoughts key="thoughts" />,
+   //<Thoughts key="thoughts" />,
     <Interests key="interests" />,
     <Toolbelt key="toolbelt" />,
     <Experience key="experience" />,
