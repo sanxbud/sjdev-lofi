@@ -25,7 +25,11 @@ export const Section = ({header,body}:SectionProps) => {
                   <span className="section-prompt text-amber-200">sanjaybudhia@dev %</span>
                   <span className="section-head text-yellow-100"><Typewriter words={[header]} typeSpeed={30} /></span>
                 </div>
-                {timer && <p className="section-body"><ReactMarkdown>{body}</ReactMarkdown></p>}
+               <p className={`section-body transition-opacity duration-500 ${timer ? 'opacity-100' : 'opacity-0'}`}>
+                      <ReactMarkdown>{body}</ReactMarkdown>
+                    </p>
+
+
             
         </div>
     )
