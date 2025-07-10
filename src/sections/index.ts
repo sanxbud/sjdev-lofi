@@ -1,4 +1,5 @@
 
+export { Whois } from './Whois'
 export { Welcome } from './Welcome'
 export { Thoughts } from './Thoughts'
 export { Interests } from './Interests'
