@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import lilguy from './assets/ugotthislilguy.png'
-import { Welcome, Thoughts, Interests, Toolbelt, Experience, Projects, Contact, Whois } from './sections'
+import { Welcome, Interests, Toolbelt, Experience, Projects, Contact, Whois } from './sections'
 
 function App() {
   const [visibleIndex, setVisibleIndex] = useState(0)
@@ -18,7 +18,7 @@ function App() {
   const sections = [
     <Welcome key="welcome" />,
     <Whois key="whois" />,
-   //<Thoughts key="thoughts" />,
+   //<Thoughts key="thoughts" />, no thoughts 
     <Interests key="interests" />,
     <Toolbelt key="toolbelt" />,
     <Experience key="experience" />,

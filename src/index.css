@@ -19,8 +19,8 @@ a {
   font-weight:bold;
   color: #ffffff;
   font-style:bold;
-  //c2a593
-  //color: #dfbae0 <- for dark mode later
+  /*c2a593
+  //color: #dfbae0 <- for dark mode later*/
   text-decoration: inherit;
 }
 a:hover {
