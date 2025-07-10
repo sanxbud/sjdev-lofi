@@ -1,25 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
-import { Welcome, Thoughts,Interests,Toolbelt,Experience,Projects,Contact } from './sections'
+import lilguy from './assets/ugotthislilguy.png'
+import { Welcome, Interests, Toolbelt, Experience, Projects, Contact, Whois } from './sections'
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [visibleIndex, setVisibleIndex] = useState(0)
 
-  return (
-    <>
-        <div className="max-w-6xl mx-auto px-10 py-14 text-left text-lg space-y-20 font-mono whitespace-pre-wrap">
+  useEffect(() => {
+    if (visibleIndex < 7) {
+      const timeout = setTimeout(() => {
+        setVisibleIndex(visibleIndex + 1)
+      }, 2500) // adjust delay here
+      return () => clearTimeout(timeout)
+    }
+  }, [visibleIndex])
 
-                <Welcome/>
-                <Thoughts/>
-                <Interests/>
-                <Toolbelt/>
-                <Experience/>
-                <Projects/>
-                <Contact/>
-        </div>     
-    </>
+  const sections = [
+    <Welcome key="welcome" />,
+    <Whois key="whois" />,
+   //<Thoughts key="thoughts" />, no thoughts 
+    <Interests key="interests" />,
+    <Toolbelt key="toolbelt" />,
+    <Experience key="experience" />,
+    <Projects key="projects" />,
+    <Contact key="contact" />,
+  ]
+
+  return (<>
+        <img src={lilguy} alt="you got this" className="mx-auto w-40"/>
+    <div className="w-screen  max-w-6xl mx-auto px-10 py-14 pt-px text-left items-start text-lg space-y-10 font-mono whitespace-pre-wrap">
+      {sections.slice(0, visibleIndex + 1)}
+    </div></>
   )
 }
 
 export default App
+

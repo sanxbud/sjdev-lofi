@@ -14,10 +14,14 @@ export const Projects = () =>{
  &nbsp;                                  \[React, TypeScript\] (2025)\n\n
  [pokemon fitness tracker](http://pokemonfitnesstracker.netlify.com)            gamified fitness tracker 
  &nbsp;                                  \[React, JavaScript, Google Sheet API\] (2025)\n\n
- [CanIPlayIt](https://github.com/sanxbud/caniplayit)                         game subscription database 
+ [CanIPlayIt](https://github.com/sanxbud/caniplayit)                         game subscription aggregate db and search service
  &nbsp;                                  \[React, JavaScript, Express, SQL, AWS\] (2024)\n\n
  QOTDbot                            discord question of the day bot 
- &nbsp;                                  \[Node, Javascript, Bash\] (2021)\n\n
+ &nbsp;                                  \[Node, Javascript, Discord API, Bash\] (2021)\n\n
+ conversionBot                      discord bot for converting common units, 1500+ users ongoing 
+ &nbsp;                                  \[Typescript, Discord API\] (2021) \n\n
+ wikiGrab                           discord interface for navigating and importing wikia 
+ &nbsp;                                  \[Python, Discord API, MediaWiki API\] (2021)\n\n
 \n
 [see more](https://github.com/sanxbud)\n
 `
