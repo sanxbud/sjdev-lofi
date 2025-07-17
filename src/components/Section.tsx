@@ -20,17 +20,16 @@ export const Section = ({header,body}:SectionProps) => {
 
     return(
         <div className="space-y-2 relative z-2">
-            
-                <div className="section-line flex gap-2">
-                  <span className="section-prompt text-amber-200 ">sanjaybudhia@dev %</span>
-                  <span className="section-head text-yellow-100 "><Typewriter words={[header]} typeSpeed={30} /></span>
-                </div>
-               <p className={`section-body relative transition-opacity duration-500 ${timer ? 'opacity-100' : 'opacity-0'}`}>
-                      <ReactMarkdown>{body}</ReactMarkdown>
-                    </p>
 
-
+            <div className="section-line flex gap-2">
+                <span className="section-prompt text-amber-200 ">sanjaybudhia@dev %</span>
+                <span className="section-head text-yellow-100 "><Typewriter words={[header]} typeSpeed={30} /></span>
+            </div>
             
+            <p className={`section-body relative transition-opacity duration-500 ${timer ? 'opacity-100' : 'opacity-0'}`}>
+                <ReactMarkdown>{body}</ReactMarkdown>
+            </p>
+
         </div>
     )
 }
