@@ -40,7 +40,7 @@ function App() {
 
             <div className="relative w-screen max-w-6xl mx-auto px-10 py-14 pt-px text-left items-start text-lg space-y-10 font-mono whitespace-pre-wrap" style={{zIndex:2}}>
             
-                <img src={lilguy} alt="you got this" className="mx-auto w-40"/>
+                <img src={lilguy} alt="you got this" className="mt-10 mx-auto w-40"/>
                 {sections.slice(0, visibleIndex + 1)}
             </div>
         </div>
