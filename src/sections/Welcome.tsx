@@ -7,7 +7,7 @@ export const Welcome = () =>{
     const welcomeHeader = `welcome.sh`
     const welcomeBody = `
 Welcome to my site. I hope you're having a good day.  
-If not, please click [here](https://emergencycompliment.netlify.app/) 💛
+If not, please click [here](https://emergencycompliments.com) 💛
 \n`
     
     
