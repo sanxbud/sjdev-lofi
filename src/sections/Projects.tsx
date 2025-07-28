@@ -8,8 +8,11 @@ export const Projects = () =>{
     const projectsBody = `
  nook                               terminal ai wrapper 
  &nbsp;                                  \[Go, Python\] (in progress)\n\n
- shelf                              Android/Browser extension cross-sync app 
- &nbsp;                                  (in progress)\n
+ index                              Symlink-based archival media organizer
+ &nbsp;                                  \[Go, TUI/GUI in progress\] (2025)
+ 
+[emergencycompliments.com](https://emergencycompliments.com)           Random compliment generator 
+ &nbsp;                                  \[Tailwind, TypeScript\] (2025)\n
  [sanjaybudhia.dev](https://sanjaybudhia.dev)                   this site - YOU ARE HERE
  &nbsp;                                  \[React, TypeScript\] (2025)\n\n
  [pokemon fitness tracker](http://pokemonfitnesstracker.netlify.com)            gamified fitness tracker 
