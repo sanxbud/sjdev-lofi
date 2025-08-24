@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 
 type SectionProps = {
     header:string
-    body:string
+    body: React.ReactNode
 }
 
 
@@ -27,7 +27,7 @@ export const Section = ({header,body}:SectionProps) => {
             </div>
             
             <p className={`section-body relative transition-opacity duration-500 ${timer ? 'opacity-100' : 'opacity-0'}`}>
-                <ReactMarkdown>{body}</ReactMarkdown>
+                {typeof body === 'string' ? <ReactMarkdown>{body}</ReactMarkdown> : body }
             </p>
 
         </div>

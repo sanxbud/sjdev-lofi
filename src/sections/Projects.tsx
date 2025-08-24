@@ -1,4 +1,5 @@
 
+import { InfoTable } from "../components/InfoTable";
 import { Section } from "../components/Section";
 
 
@@ -29,10 +30,96 @@ export const Projects = () =>{
 [see more](https://github.com/sanxbud)\n
 `
         
+  const projCol = ['name', 'description', 'tech + year']
 
+  const projRows= [
+    {
+      tooltip: '',
+      values: [
+        'nook',
+        'terminal ai wrapper',
+        '[Go, Python] (in progress)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        'index',
+        'symlink-based archival media organizer',
+        '[Go CLI, TUI/GUI in progress] (2025)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        <a href="https://emergencycompliments.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-300">
+          emergencycompliments.com
+        </a>,
+        'random compliment generator',
+        '[Tailwind, TypeScript] (2025)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        <a href="https://sanjaybudhia.dev" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-300">
+         sanjaybudhia.dev
+        </a>,
+        'this site – YOU ARE HERE',
+        '[React, TypeScript] (2025)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        <a href="http://pokemonfitnesstracker.netlify.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-300">
+          pokemon fitness tracker
+        </a>,
+        'gamified fitness tracker',
+        '[React, JavaScript, Google Sheet API] (2025)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        <a href="https://github.com/sanxbud/caniplayit" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-300">
+          CanIPlayIt
+        </a>,
+        'game subscription aggregator + search service',
+        '[React, JavaScript, Express, SQL, AWS] (2024)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        'QOTDbot',
+        'discord question of the day bot',
+        '[Node, JavaScript, Discord API, Bash] (2021)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        'conversionBot',
+        'unit converter discord bot — 1500+ users',
+        '[TypeScript, Discord API] (2021)',
+      ]
+    },
+    {
+      tooltip: '',
+      values: [
+        'wikiGrab',
+        'discord interface for navigating + importing wikia',
+        '[Python, Discord API, MediaWiki API] (2021)',
+      ]
+    },
+  ]
+
+
+  const projTable = InfoTable({columns:projCol,rows:projRows,showHeaders:false})
 
     return(
-        <Section header={projectsHeader} body={projectsBody} />
+        <Section header={projectsHeader} body={projTable} />
         
     )
 }

@@ -10,7 +10,7 @@ export const Whois = () =>{
 
 Right now, I'm focused on writing (blog coming soon!), doing research on AI, and upping my Go game with a couple apps and tools I have in development. 
 
-Professionally, I'm working with CanU Canada, a youth nonprofit here in Winnipeg focused on helping newcomer youth see their post-secondary potential. I also help run LoseItChallenges, a seasonal fitness and weight loss community. 
+Professionally, I'm working with CanU Canada, a youth nonprofit here in Winnipeg focused on helping newcomer youth see their post-secondary potential. I also help run LoseItChallenges, a seasonal fitness and weight loss community I've been volunteering with since 2019. 
 
 [I am currently open to full time roles - click here for my resume!](/files/SanjayBudhia_SoftwareEngineerResume.pdf) If you're hiring or even just want to chat, I'd love to hear from you!`    
 
